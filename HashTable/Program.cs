@@ -25,6 +25,11 @@ namespace HashTable
                 hash.Add(key, word);
                 key++;
             }
+            Console.WriteLine("Before removing the list has these items");
+            hash.Display();
+            hash.Remove(2);
+            Console.WriteLine("\nAfter removing the list has these items\n");
+            hash.Display();
             FindFrequency.Frequency(para);
             Console.ReadLine();
         }
